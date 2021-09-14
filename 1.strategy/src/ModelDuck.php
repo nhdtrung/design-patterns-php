@@ -2,9 +2,7 @@
 
 namespace HeadFirst\Strategy;
 
-use HeadFirst\Strategy\FlyBehavior\FlyBehaviorInterface;
 use HeadFirst\Strategy\FlyBehavior\FlyNoWay;
-use HeadFirst\Strategy\QuackBehavior\QuackBehaviorInterface;
 use HeadFirst\Strategy\QuackBehavior\Quacks;
 
 class ModelDuck extends Duck

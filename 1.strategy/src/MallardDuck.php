@@ -2,8 +2,6 @@
 
 namespace HeadFirst\Strategy;
 
-use HeadFirst\Strategy\FlyBehavior\FlyBehaviorInterface;
-use HeadFirst\Strategy\FlyBehavior\QuackBehaviorInterface;
 use HeadFirst\Strategy\FlyBehavior\FlyWithWings;
 use HeadFirst\Strategy\QuackBehavior\Quacks;
 

@@ -1,0 +1,16 @@
+{
+    "name": "headfirst/strategy",
+    "description": "Strategy Pattern",
+    "autoload": {
+        "psr-4": {
+            "HeadFirst\\Observer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "TravisNguyen",
+            "email": "travisnguyenhoang@gmail.com"
+        }
+    ],
+    "require": {}
+}
