@@ -11,6 +11,12 @@ Design Pattern by HeadFirst Design Pattern Book.
     what behavior need to separates from code block and what need stays the same.*
 
 ## Design Principle:
-- Program to an interfacce, not an implementation ( 1 of 4 principals in SOLID )
+- Program to an interfacce, not an implementation ( 1 of 5 principals in SOLID )
 
 
+# 2. Observer Pattern
+
+![diagram](2.observer/img/Observer.png)
+
+## Design Principle:
+- The observer pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.

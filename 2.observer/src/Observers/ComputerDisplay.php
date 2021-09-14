@@ -13,7 +13,8 @@ class ComputerDisplay implements ObserverInterface {
         $this->weatherStation = $weatherStation;
     }
 
-    public function update() {
+    public function update()
+    {
         echo 'this is computer screen:' . PHP_EOL;
         $this->weatherStation->getTemperature();
     }
