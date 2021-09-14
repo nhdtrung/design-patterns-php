@@ -2,7 +2,7 @@ Design Pattern by HeadFirst Design Pattern Book.
 
 # 1. Strategy Pattern (Policy Pattern)
 
-[diagram](./1.strategy/img/Strategy_Diagram.jpg)
+![diagram](img/Strategy_Diagram.jpg)
 
 ## Design Principle:
 - Identify the aspects of your application that vary and seperate them from what stays the same.
@@ -11,4 +11,16 @@ Design Pattern by HeadFirst Design Pattern Book.
 
 ## Design Principle:
 - Program to an interfacce, not an implementation ( 1 of 4 principals in SOLID )
+
+
+## Run the code
+
+Generate the auto loader with composer
+
+note: __*Do this step for each folder that have composer.json within*__
+
+``` bash
+    $ composer dump-autoload
+    $ php Index.php
+```
 
