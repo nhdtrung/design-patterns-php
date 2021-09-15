@@ -1,0 +1,16 @@
+{
+    "name": "headfirst/decorator",
+    "description": "Decorator Pattern",
+    "autoload": {
+        "psr-4": {
+            "HeadFirst\\Decorator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "TravisNguyen",
+            "email": "travisnguyenhoang@gmail.com"
+        }
+    ],
+    "require": {}
+}
