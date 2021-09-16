@@ -13,4 +13,3 @@ abstract class Decorator extends Beverage
 
     abstract function cost(): float;
 }
-

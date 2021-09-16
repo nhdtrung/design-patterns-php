@@ -2,21 +2,19 @@
 
 namespace HeadFirst\Decorator;
 
-class Milk extends Beverage
+class Milk extends Decorator
 {
-	protected $beverage;
+    protected Beverage $beverage;
+
+    protected int $price = 5;
 
     public function __construct(Beverage $beverage)
     {
         $this->beverage = $beverage;
     }
-	
-	public function getDescription() {
-		// return $this->beverage->getDescription() . ", Soy";
-	}
-	
+
     public function cost(): float
     {
-        return $this->beverage->cost() + 5;
+        return $this->beverage->cost() + $this->price;
     }
 }

@@ -13,19 +13,23 @@ abstract class Duck
     // Display is abstraction cause all ducks will have different display
     abstract function display();
 
-    public function performFly() {
+    public function performFly()
+    {
         $this->flyBehavior->fly();
     }
 
-    public function performQuack() {
+    public function performQuack()
+    {
         $this->quackBehavior->quack();
     }
 
-    public function setFlyBehavior(FlyBehaviorInterface $flyBehaviorInterface) {
-        $this->flyBehavior= $flyBehaviorInterface;
+    public function setFlyBehavior(FlyBehaviorInterface $flyBehaviorInterface)
+    {
+        $this->flyBehavior = $flyBehaviorInterface;
     }
 
-    public function setQuackBehavior(QuackBehaviorInterface $quackBehaviorInterface) {
+    public function setQuackBehavior(QuackBehaviorInterface $quackBehaviorInterface)
+    {
         $this->quackBehavior = $quackBehaviorInterface;
     }
 }

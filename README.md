@@ -20,3 +20,12 @@ Design Pattern by HeadFirst Design Pattern Book.
 
 ## Design Principle:
 - The observer pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+
+
+# 3. Decorator Pattern
+
+![diagram](3.decorator/img/Decorator.png)
+
+## Design Principle:
+- Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+

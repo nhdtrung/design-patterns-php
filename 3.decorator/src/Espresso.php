@@ -2,9 +2,9 @@
 
 namespace HeadFirst\Decorator;
 
-class DarkRoast extends Beverage
+class Espresso extends Beverage
 {
-    protected int $price = 10;
+    protected int $price = 20;
 
     public function cost(): float
     {

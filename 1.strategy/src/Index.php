@@ -2,10 +2,9 @@
 
 namespace HeadFirst\Strategy;
 
-require_once './vendor/autoload.php';
+require_once __DIR__ . './../vendor/autoload.php';
 
 use HeadFirst\Strategy\FlyBehavior\FlyRocketPowered;
-use HeadFirst\Strategy\MallardDuck;
 use HeadFirst\Strategy\QuackBehavior\Squeak;
 
 $duck = new MallardDuck();

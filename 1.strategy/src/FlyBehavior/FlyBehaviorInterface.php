@@ -2,7 +2,8 @@
 
 namespace HeadFirst\Strategy\FlyBehavior;
 
-interface FlyBehaviorInterface {
+interface FlyBehaviorInterface
+{
     public function fly();
 }
 

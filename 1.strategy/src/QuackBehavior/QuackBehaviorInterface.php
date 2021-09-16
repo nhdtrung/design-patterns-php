@@ -2,7 +2,8 @@
 
 namespace HeadFirst\Strategy\QuackBehavior;
 
-interface QuackBehaviorInterface {
+interface QuackBehaviorInterface
+{
     public function quack();
 }
 
