@@ -53,7 +53,7 @@ class DBFacotory
             $dbObject = new MySQLConnector();
             break;
         case "SQLServer":
-            $dbObject = new MySQLConnector();
+            $dbObject = new SQLServerConnector();
             break;
         default:
             $dbObject = new SQLLite3(); 
