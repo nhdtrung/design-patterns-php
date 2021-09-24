@@ -2,15 +2,12 @@ Design Pattern by HeadFirst Design Pattern Book.
 
 # 4. Factory Method (a.k.a Virtual Constructor)
 - This part is an example for Factory Method. Part 2 belongs to Aabstract factory is here.
+```
+This belongs to creational design pattern that provides an interface for creating objects in a supperclass, but allows subclasses to alter/decide type of object that will be created.
+```
 
 # Design Principle:
-- This belongs to creational design pattern that provides an interface for creating objects
-in a supperclass, but allows subclasses to alter type of object that will be created.
-
-# Cons:
-- Loose Coupling
-- Reusability
-- Easier to maintain
+- Depend upon abstractions. Do not depend upon concrete classes.
 
 # Real life example:
 - Imagine you're using Mysql database connections in your backend system.
@@ -20,7 +17,11 @@ in a supperclass, but allows subclasses to alter type of object that will be cre
 - In future, customer wants to change to other DB connector then you needs to do the same thing above...
 - Imagine you have 300 lines of code using this connector, then you need edit all of them, it's terrible.
 
-# Why Factory Pattern help here:
+# Why Factory Pattern helps here:
 - Decoupling the creation creation of object/interface from your code.
 - When you need to edit, add or remove some connector, just need to edit 1 method without affect other classes.
 
+# Cons:
+- Loose Coupling
+- Reusability
+- Easier to maintain
