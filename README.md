@@ -78,7 +78,7 @@ An example for PizzaStore:
 
 ![Ingredient_Factory](4.factory/4.2%20abstract%20factory/img/Ingredient_Factory.png)
 
-Example:
+Result:
 
 ![result](4.factory/4.2%20abstract%20factory/img/factory_ressult.png)
 

@@ -12,7 +12,11 @@ An example for PizzaStore:
 
 ![img_1.png](img/img_1.png)
 
-Example:
+![Pizza_and_Stores_Diagrams](img/Pizza_and_Stores_Diagrams.png)
+
+![Ingredient_Factory](img/Ingredient_Factory.png)
+
+Result:
 
 ![result](img/factory_ressult.png)
 
