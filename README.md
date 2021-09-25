@@ -68,15 +68,19 @@ Design Pattern by HeadFirst Design Pattern Book.
 Provides an interface for creating families of related or dependent object without specifying their concrete class
 ```
 
-![abstract factory](4.factory/4.2 abstract factory/img/img.png)
+![abstract factory](4.factory/4.2%20abstract%20factory/img/img.png)
 
 An example for PizzaStore:
 
-![abstract factory](4.factory/4.2 abstract factory/img/img_1.png)
+![abstract factory](4.factory/4.2%20abstract%20factory/img/img_1.png)
+
+![Pizza_and_Stores_Diagrams](4.factory/4.2%20abstract%20factory/img/Pizza_and_Stores_Diagrams.png)
+
+![Ingredient_Factory](4.factory/4.2%20abstract%20factory/img/Ingredient_Factory.png)
 
 Example:
 
-![result](4.factory/4.2 abstract factory/img/factory_ressult.png)
+![result](4.factory/4.2%20abstract%20factory/img/factory_ressult.png)
 
 The factory pattern construct a single object != The abstract factory construct multiple objects
 
