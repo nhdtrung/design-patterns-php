@@ -70,4 +70,3 @@ echo $newConn->execute();
 echo "---Change to another connector---" . PHP_EOL;
 $newConn = DBFacotory::getConn('SQLServer');
 echo $newConn->execute();
-

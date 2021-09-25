@@ -11,6 +11,7 @@ This belongs to creational design pattern that provides an interface for creatin
 # Design Principle:
 
 - Depend upon abstractions. Do not depend upon concrete classes.
+- Factory Pattern encapsulate object creation
 
 # Real life example:
 

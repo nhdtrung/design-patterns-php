@@ -12,6 +12,10 @@ An example for PizzaStore:
 
 ![img_1.png](img/img_1.png)
 
+Example:
+
+![result](img/factory_ressult.png)
+
 The factory pattern construct a single object != The abstract factory construct multiple objects
 
 As you can see in 2 pictures above, the Abstract Factory actually looks like a Factory Method. Each method is declared
@@ -24,8 +28,3 @@ implementations. So factory methods are a natural way to implement your product 
 ```angular2html
 Absctract factory contains multiple factory methods inside
 ```
-
-# Conclusion:
-
-- Factory Pattern encapsulate object creation
-- 

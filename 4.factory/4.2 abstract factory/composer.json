@@ -1,0 +1,9 @@
+{
+  "name": "nhdtrung/factory",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "": "./src/"
+    }
+  }
+}
