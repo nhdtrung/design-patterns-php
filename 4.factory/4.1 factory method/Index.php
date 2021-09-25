@@ -1,4 +1,5 @@
 <?php
+
 interface Connection
 {
     public function execute();
@@ -10,7 +11,7 @@ class SQLLite3 implements Connection
     {
         echo 'SQL lite 3 database connection' . PHP_EOL;
     }
-    
+
     public function execute()
     {
         echo "Your sql lite 3 select query execute here" . PHP_EOL;
@@ -23,7 +24,7 @@ class MySQLConnector implements Connection
     {
         echo 'Mysql database connection' . PHP_EOL;
     }
-    
+
     public function execute()
     {
         echo "Your mysql select query execute here" . PHP_EOL;
@@ -36,7 +37,7 @@ class SQLServerConnector implements Connection
     {
         echo 'SQL Server database connection' . PHP_EOL;
     }
-    
+
     public function execute()
     {
         echo "Your SQL server select query execute here" . PHP_EOL;
@@ -47,17 +48,16 @@ class DBFacotory
 {
     public static function getConn($dbType)
     {
-        switch($dbType)
-        {
-        case "MySQL":
-            $dbObject = new MySQLConnector();
-            break;
-        case "SQLServer":
-            $dbObject = new SQLServerConnector();
-            break;
-        default:
-            $dbObject = new SQLLite3(); 
-            break;
+        switch ($dbType) {
+            case "MySQL":
+                $dbObject = new MySQLConnector();
+                break;
+            case "SQLServer":
+                $dbObject = new SQLServerConnector();
+                break;
+            default:
+                $dbObject = new SQLLite3();
+                break;
         }
         return $dbObject;
     }
