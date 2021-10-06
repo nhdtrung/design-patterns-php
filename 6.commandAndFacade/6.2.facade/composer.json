@@ -1,0 +1,16 @@
+{
+  "name": "headfirst/facade",
+  "description": "Facade Pattern",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "TravisNguyen",
+      "email": "travisnguyenhoang@gmail.com"
+    }
+  ],
+  "require": {}
+}

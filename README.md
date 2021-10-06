@@ -94,3 +94,49 @@ implementations. So factory methods are a natural way to implement your product 
 ```angular2html
 Absctract factory contains multiple factory methods inside
 ```
+
+# 5. Singleton Pattern
+Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
+Clients may not even realize that they’re working with the same object all the time.
+
+![](5.singleton/singleton.png)
+
+```
+Identify the aspects of your application that vary and seperate them from what stays the same. when you have an codes to change, investigate new requirements carefully then you should know what behavior need to separates from code block and what need stays the same.
+```
+## Design Principle:
+
+
+
+
+# 6. Command pattern and Facade pattern 
+
+## 6.2 Facade Pattern (The principle of least knowledge)
+
+Belong to structural pattern.
+
+Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes
+the subsystem easier to use.
+
+### Facade used when
+
+    when you want to simplify a complex system.
+
+* Facades don't encapsulate .
+* Facade Pattern allows to avoid tight coupling between client and subsystem.
+
+From
+
+![](6.commandAndFacade/6.2.facade/img/facade-legacy.png)
+
+to
+
+![](6.commandAndFacade/6.2.facade/img/facade-pattern.png)
+
+Real example:
+
+![](6.commandAndFacade/6.2.facade/img/facade.png)
+
+Useful video:
+[[Youtube]](https://www.youtube.com/watch?v=K4FkHVO5iac&t=470s)
