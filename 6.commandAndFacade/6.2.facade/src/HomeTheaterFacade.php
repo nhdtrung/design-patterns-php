@@ -11,15 +11,55 @@ use \Components\PopcornPopper;
 
 class HomeTheaterFacade
 {
+    /**
+     * @var Amplifier
+     */
     private $amp;
+
+    /**
+     * @var Tuner
+     */
     private $tuner;
-    private $dvd;
+
+    /**
+     * @var DvdPlayer
+     */
+    protected $dvd;
+    /**
+     * @var CdPlayer
+     */
     private $cd;
+
+    /**
+     * @var Projector
+     */
     private $projector;
-    private $lights;
-    private $screen;
+
+    /**
+     * @var TheaterLights
+     */
+    private TheaterLights $lights;
+
+    /**
+     * @var Screen
+     */
+    private Screen $screen;
+
+    /**
+     * @var PopcornPopper
+     */
     private $popper;
 
+    /**
+     * @param Amplifier $amp
+     * @param Tuner $tuner
+     * @param DvdPlayer $dvd
+     * @param CdPlayer $cd
+     * @param Projector $projector
+     * @param Screen $screen
+     * @param TheaterLights $lights
+     * @param PopcornPopper $popper
+     */
     public function __construct(
         Amplifier     $amp,
         Tuner         $tuner,
@@ -41,6 +81,9 @@ class HomeTheaterFacade
         $this->popper = $popper;
     }
 
+    /**
+     * @param string $movie
+     */
     public function watchMovie(string $movie)
     {
         echo "Get ready to watch a movie..." . PHP_EOL;
@@ -58,6 +101,9 @@ class HomeTheaterFacade
         $this->dvd->play($movie);
     }
 
+    /**
+     * End movie
+     */
     public function endMovie()
     {
         echo "Shutting movie theater down... " . PHP_EOL;
