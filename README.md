@@ -110,8 +110,36 @@ Identify the aspects of your application that vary and seperate them from what s
 
 
 
-# 6. Command pattern and Facade pattern 
+# 6. Adapter pattern and Facade pattern 
 
+# 6.1 Adapter Pattern (aka Wrapper Pattern)
+
+> The adapter pattern convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+
+### Adapter Pattern used when
+
+When a class that you need to use doesn't meet the requirements of an interface.
+Exposed to legacy code may encounter an old interface needs to be converted to match new client code *Adapters* allows programming components to work together that otherwise wouldn't because of mismatched interfaces.
+
+Adapter pattern motivation is that we can reuse existing software if we can modify the interface.
+
+![](6.AdaperAndFacade/6.1 adapter/img/adapter_01.png)
+
+![](6.AdaperAndFacade/6.1 adapter/img/adapter_02.png)
+
+#### There are two kinds of Adapters
+
+1. **Class Adapter**
+   *uses `inheritance`* [multiple inheritance] *not supported in *java* nor *php*.
+   can only wrap a class It cannot wrap an interface since by definition it must derive from some base class.
+
+1. **Object Adapter**
+   *uses `Object composition`* composition and can wrap classes or interfaces, or both. It can do this since it contains, as a private, encapsulated member,the class or interface object instance it wraps.
+
+![](6.AdaperAndFacade/6.1 adapter/img/example_duck.png)
+
+Useful video:
+[[Youtube]](https://youtu.be/2PKQtcJjYvc)
 ## 6.2 Facade Pattern (The principle of least knowledge)
 
 Belong to structural pattern.
@@ -128,15 +156,16 @@ the subsystem easier to use.
 
 From
 
-![](6.commandAndFacade/6.2.facade/img/facade-legacy.png)
+![](6.AdaperAndFacade/6.2.facade/img/facade.png)
 
 to
 
-![](6.commandAndFacade/6.2.facade/img/facade-pattern.png)
+![](6.AdaperAndFacade/6.2.facade/img/facade-legacy.png)
 
 Real example:
 
-![](6.commandAndFacade/6.2.facade/img/facade.png)
+![](6.AdaperAndFacade/6.2.facade/img/facade-pattern.png)
 
 Useful video:
 [[Youtube]](https://www.youtube.com/watch?v=K4FkHVO5iac&t=470s)
+

@@ -1,0 +1,9 @@
+{
+  "name": "headfirst/adapter",
+  "description": "Adapter Pattern",
+  "autoload": {
+    "psr-4": {
+      "": "./"
+    }
+  }
+}

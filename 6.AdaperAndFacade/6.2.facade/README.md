@@ -1,16 +1,15 @@
-# 7. Facade Pattern (The principle of least knowledge)
+# 6.2 Facade Pattern (The principle of least knowledge)
 
 Belong to structural pattern.
 
-Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes
-the subsystem easier to use.
+> The Facade Pattern provides a unified interface to a set of interfaces in subsystem. Facade defines a higher-level interface that make the subsystem easier to use.
 
 ### Facade used when
 
     when you want to simplify a complex system.
 
 * Facades don't encapsulate .
-* Facade Pattern allows to avoid tight coupling between client and subsystem.
+* Facade Pattern allows avoid tight coupling between client and subsystem.
 
 From
 
