@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Components;
 
 class Projector
@@ -18,6 +20,4 @@ class Projector
     {
         echo "Projector is off " . PHP_EOL;
     }
-
 }
-

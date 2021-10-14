@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 require_once './../vendor/autoload.php';
 
 use Components\Amplifier;
@@ -14,7 +16,7 @@ use Components\PopcornPopper;
 $amp = new Amplifier();
 $tuner = new Tuner();
 $dvd = new DvdPlayer();
-$cd = new CdPlayer;
+$cd = new CdPlayer();
 $projector = new Projector();
 $screen = new Screen();
 $lights = new TheaterLights();

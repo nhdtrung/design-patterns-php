@@ -1,10 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Observer\Observable;
 
 use HeadFirst\Observer\Observers\ObserverInterface;
 
-class WeatherStation implements ObserverableInterface {
+class WeatherStation implements ObserverableInterface
+{
     protected $observerInterface = array();
     protected $temp;
 
@@ -20,8 +23,7 @@ class WeatherStation implements ObserverableInterface {
 
     public function notify()
     {
-        foreach( $this->observerInterface as $observer )
-        {
+        foreach ($this->observerInterface as $observer) {
             $observer->update();
         }
     }
@@ -39,4 +41,3 @@ class WeatherStation implements ObserverableInterface {
         DOC . PHP_EOL;
     }
 }
-

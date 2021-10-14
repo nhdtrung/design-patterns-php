@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Decorator;
 
 class Milk extends Decorator
 {
-    protected Beverage $beverage;
+    protected $beverage;
 
-    protected int $price = 5;
+    protected $price = 5;
 
     public function __construct(Beverage $beverage)
     {

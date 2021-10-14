@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Strategy\QuackBehavior;
 
 class Quacks implements QuackBehaviorInterface
@@ -9,4 +11,3 @@ class Quacks implements QuackBehaviorInterface
         echo "quack quack quack !!!" . PHP_EOL;
     }
 }
-

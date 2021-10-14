@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Strategy;
 
 use HeadFirst\Strategy\FlyBehavior\FlyNoWay;
@@ -32,4 +34,3 @@ class ModelDuck extends Duck
         echo $this->quackBehavior->quack();
     }
 }
-

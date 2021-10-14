@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Strategy\QuackBehavior;
 
 class MuteQuack implements QuackBehaviorInterface
@@ -9,4 +11,3 @@ class MuteQuack implements QuackBehaviorInterface
         echo "I can't quack" . PHP_EOL;
     }
 }
-

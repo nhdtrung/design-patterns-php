@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 require_once __DIR__ . './../vendor/autoload.php';
 
 use HeadFirst\Observer\Observable\WeatherStation;
@@ -20,4 +22,3 @@ $weatherStation->notify();
 
 $weatherStation->setTemperature(-10);
 $weatherStation->notify();
-

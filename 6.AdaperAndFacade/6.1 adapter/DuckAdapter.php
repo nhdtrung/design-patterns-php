@@ -1,16 +1,26 @@
 <?php
 
-class DuckAdapter implements Turkey {
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ */
+
+declare(strict_types=1);
+
+class DuckAdapter implements Turkey
+{
     // Adaptee
     private $duck;
 
-    public function __construct(Duck $duck){
+    public function __construct(Duck $duck)
+    {
         $this->duck = $duck;
     }
-    public function gobble(){
+    public function gobble()
+    {
         $this->duck->quack();
     }
-    public function fly(){
+    public function fly()
+    {
         $this->duck->fly();
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Ingredients\Clams;
 
 use Ingredients\Clams;

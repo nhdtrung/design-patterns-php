@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Decorator;
 
 class Espresso extends Beverage
 {
-    protected int $price = 20;
+    protected $price = 20;
 
     public function cost(): float
     {

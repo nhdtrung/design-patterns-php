@@ -1,13 +1,19 @@
 <?php
 
-use \Components\Amplifier;
-use \Components\Tuner;
-use \Components\DvdPlayer;
-use \Components\CdPlayer;
-use \Components\Projector;
-use \Components\TheaterLights;
-use \Components\Screen;
-use \Components\PopcornPopper;
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ */
+
+declare(strict_types=1);
+
+use Components\Amplifier;
+use Components\Tuner;
+use Components\DvdPlayer;
+use Components\CdPlayer;
+use Components\Projector;
+use Components\TheaterLights;
+use Components\Screen;
+use Components\PopcornPopper;
 
 class HomeTheaterFacade
 {
@@ -38,12 +44,12 @@ class HomeTheaterFacade
     /**
      * @var TheaterLights
      */
-    private TheaterLights $lights;
+    private $lights;
 
     /**
      * @var Screen
      */
-    private Screen $screen;
+    private $screen;
 
     /**
      * @var PopcornPopper
@@ -61,16 +67,15 @@ class HomeTheaterFacade
      * @param PopcornPopper $popper
      */
     public function __construct(
-        Amplifier     $amp,
-        Tuner         $tuner,
-        DvdPlayer     $dvd,
-        CdPlayer      $cd,
-        Projector     $projector,
-        Screen        $screen,
+        Amplifier $amp,
+        Tuner $tuner,
+        DvdPlayer $dvd,
+        CdPlayer $cd,
+        Projector $projector,
+        Screen $screen,
         TheaterLights $lights,
         PopcornPopper $popper
-    )
-    {
+    ) {
         $this->amp = $amp;
         $this->tuner = $tuner;
         $this->dvd = $dvd;

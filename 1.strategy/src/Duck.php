@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Strategy;
 
 use HeadFirst\Strategy\FlyBehavior\FlyBehaviorInterface;
@@ -11,7 +13,7 @@ abstract class Duck
     protected $quackBehavior;
 
     // Display is abstraction cause all ducks will have different display
-    abstract function display();
+    abstract public function display();
 
     public function performFly()
     {
@@ -33,4 +35,3 @@ abstract class Duck
         $this->quackBehavior = $quackBehaviorInterface;
     }
 }
-

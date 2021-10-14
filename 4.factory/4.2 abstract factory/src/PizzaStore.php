@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ */
+
+declare(strict_types=1);
+
 abstract class PizzaStore
 {
     /**
@@ -9,12 +15,10 @@ abstract class PizzaStore
     public function orderPizza(string $type): Pizza
     {
         $pizza = $this->createPizza($type);
-
         $pizza->prepare();
         $pizza->bake();
         $pizza->cut();
         $pizza->box();
-
         return $pizza;
     }
 

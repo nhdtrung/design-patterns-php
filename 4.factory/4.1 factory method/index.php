@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MultipleClasses
+ * phpcs:disable PSR1.Files.SideEffects
+ */
+
+declare(strict_types=1);
+
 interface Connection
 {
     public function execute();

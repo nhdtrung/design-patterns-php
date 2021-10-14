@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Strategy;
 
 require_once __DIR__ . './../vendor/autoload.php';
@@ -24,4 +26,3 @@ $duck->performFly();
 echo '----upgrade model duck with different sound part.----' . PHP_EOL;
 $duck->setQuackBehavior(new Squeak());
 $duck->performQuack();
-

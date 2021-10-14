@@ -1,9 +1,15 @@
 <?php
 
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ */
+
+declare(strict_types=1);
+
 class CheesePizza extends Pizza
 {
     /** @var PizzaIngredientFactory */
-    private PizzaIngredientFactory $ingredientFactory;
+    private $ingredientFactory;
 
     /**
      * constructor

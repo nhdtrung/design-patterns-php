@@ -1,15 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Decorator;
 
 abstract class Decorator extends Beverage
 {
-    protected Beverage $beverage;
+    protected $beverage;
 
     public function __construct(Beverage $beverage)
     {
         $this->beverage = $beverage;
     }
 
-    abstract function cost(): float;
+    abstract public function cost(): float;
 }

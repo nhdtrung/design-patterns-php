@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ */
+
+declare(strict_types=1);
+
 use Ingredients\Cheese;
 use Ingredients\Cheese\ReggianCheese;
 use Ingredients\Clams;

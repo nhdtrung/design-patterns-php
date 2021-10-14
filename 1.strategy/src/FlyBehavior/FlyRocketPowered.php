@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Strategy\FlyBehavior;
 
 class FlyRocketPowered implements FlyBehaviorInterface
@@ -9,4 +11,3 @@ class FlyRocketPowered implements FlyBehaviorInterface
         echo 'Flyyyyyyyyyy by rocket!!!' . PHP_EOL;
     }
 }
-

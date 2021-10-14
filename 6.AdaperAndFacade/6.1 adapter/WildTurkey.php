@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ */
+
+declare(strict_types=1);
+
 class WildTurkey implements Turkey
 {
     public function gobble()

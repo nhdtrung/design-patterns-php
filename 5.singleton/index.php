@@ -1,27 +1,40 @@
 <?php
 
-class Singleton {
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ * phpcs:disable PSR1.Files.SideEffects
+ */
+
+declare(strict_types=1);
+
+class Singleton
+{
 
     /**
      * @var Singleton
      */
-    private static Singleton $instances;
+    private static $instances;
 
     /**
      * The Singleton's constructor should always be private to prevent direct
      * construction calls with the `new` operator.
      */
-    protected function __construct() {}
+    protected function __construct()
+    {
+    }
 
     /**
      * Singletons should not be restorable from strings.
      */
-    public function __wakeup() {}
+    public function __wakeup()
+    {
+    }
 
     /**
      * Singletons should not be cloneable.
      */
-    public function __clone() {
+    public function __clone()
+    {
         throw new BadMethodCallException("Clone is not allowed.");
     }
 
@@ -31,7 +44,7 @@ class Singleton {
     public static function getSingleton(): singleton
     {
         if (!self::$instances) {
-		    echo ("creating a new instance") . PHP_EOL;
+            echo ("creating a new instance") . PHP_EOL;
             self::$instances = new singleton();
         } else {
             echo ("this is previous instance") . PHP_EOL;
@@ -39,7 +52,8 @@ class Singleton {
         return self::$instances;
     }
 
-    public function doSomething() {
+    public function doSomething()
+    {
         //@TODO: some logics
     }
 }

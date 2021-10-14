@@ -1,11 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * An example from refactoring.guru
  *
+ * phpcs:ignoreFile
+ *
  * https://refactoring.guru/design-patterns/factory-method/php/example#example-1
  */
-
 namespace RefactoringGuru\FactoryMethod\RealWorld;
 
 /**
@@ -50,7 +53,15 @@ abstract class SocialNetworkPoster
  */
 class FacebookPoster extends SocialNetworkPoster
 {
-    private $login, $password;
+    /**
+     * @var string
+     */
+    private $login;
+
+    /**
+     * @var string
+     */
+    private $password;
 
     public function __construct(string $login, string $password)
     {
@@ -69,7 +80,15 @@ class FacebookPoster extends SocialNetworkPoster
  */
 class LinkedInPoster extends SocialNetworkPoster
 {
-    private $email, $password;
+    /**
+     * @var string
+     */
+    private $email;
+
+    /**
+     * @var string
+     */
+    private $password;
 
     public function __construct(string $email, string $password)
     {
@@ -100,7 +119,15 @@ interface SocialNetworkConnector
  */
 class FacebookConnector implements SocialNetworkConnector
 {
-    private $login, $password;
+    /**
+     * @var string
+     */
+    private $login;
+
+    /**
+     * @var string
+     */
+    private $password;
 
     public function __construct(string $login, string $password)
     {
@@ -130,7 +157,15 @@ class FacebookConnector implements SocialNetworkConnector
  */
 class LinkedInConnector implements SocialNetworkConnector
 {
-    private $email, $password;
+    /**
+     * @var string
+     */
+    private $login;
+
+    /**
+     * @var string
+     */
+    private $password;
 
     public function __construct(string $email, string $password)
     {
@@ -161,10 +196,8 @@ class LinkedInConnector implements SocialNetworkConnector
  */
 function clientCode(SocialNetworkPoster $creator)
 {
-    // ...
     $creator->post("Hello world!");
     $creator->post("I had a large hamburger this morning!");
-    // ...
 }
 
 /**

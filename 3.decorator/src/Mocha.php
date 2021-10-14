@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Decorator;
 
 class Mocha extends Decorator
 {
-    protected Beverage $beverage;
+    protected $beverage;
 
     public function __construct(Beverage $beverage)
     {

@@ -1,11 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Observer\Observers;
 
 use HeadFirst\Observer\Observable\WeatherStation;
 use HeadFirst\Observer\Observers\ObserverInterface;
 
-class ComputerDisplay implements ObserverInterface {
+class ComputerDisplay implements ObserverInterface
+{
     protected $weatherStation;
 
     public function __construct(WeatherStation $weatherStation)
@@ -19,4 +22,3 @@ class ComputerDisplay implements ObserverInterface {
         $this->weatherStation->getTemperature();
     }
 }
-

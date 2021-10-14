@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ */
+
+declare(strict_types=1);
+
 abstract class Pizza
 {
     protected $name;
@@ -9,9 +15,7 @@ abstract class Pizza
     protected $cheese;
     protected $pepperoni;
     protected $clams;
-
     abstract public function prepare();
-
     public function bake()
     {
         echo "Bake for 25 minute at 350\n";

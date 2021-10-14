@@ -1,10 +1,16 @@
 <?php
 
+/**
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ * phpcs:disable PSR1.Classes.ClassDeclaration.MultipleClasses
+ */
+
+declare(strict_types=1);
+
 abstract class Developer
 {
     public $type = '';
     public $price = 0;
-
     public function training()
     {
         echo $this->type . ' Developer is trained' . PHP_EOL;

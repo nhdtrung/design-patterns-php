@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace HeadFirst\Strategy;
 
 use HeadFirst\Strategy\FlyBehavior\FlyWithWings;
@@ -32,4 +34,3 @@ class MallardDuck extends Duck
         echo $this->quackBehavior->quack();
     }
 }
-
