@@ -31,9 +31,9 @@ Design Pattern by HeadFirst Design Pattern Book.
 
 - This part is an example for Factory Method. Part 2 belongs to Aabstract factory is here.
 
-```
-This belongs to creational design pattern that provides an interface for creating objects in a supperclass, but allows subclasses to alter/decide type of object that will be created.
-```
+
+> This belongs to creational design pattern that provides an interface for creating objects in a supperclass, but allows subclasses to alter/decide type of object that will be created.
+
 
 # Design Principle:
 
@@ -64,9 +64,7 @@ Design Pattern by HeadFirst Design Pattern Book.
 
 # 4.2 Abstract Factory
 
-```
-Provides an interface for creating families of related or dependent object without specifying their concrete class
-```
+> Provides an interface for creating families of related or dependent object without specifying their concrete class
 
 ![abstract factory](4.factory/4.2%20abstract%20factory/img/img.png)
 
@@ -131,7 +129,7 @@ Adapter pattern motivation is that we can reuse existing software if we can modi
 1. **Object Adapter**
    *uses `Object composition`* composition and can wrap classes or interfaces, or both. It can do this since it contains, as a private, encapsulated member,the class or interface object instance it wraps.
 
-![](6.AdaperAndFacade/6.1 adapter/img/example_duck.png)
+![](6.AdaperAndFacade/6.1%20adapter/img/example_duck.png)
 
 Useful video:
 [[Youtube]](https://youtu.be/2PKQtcJjYvc)
